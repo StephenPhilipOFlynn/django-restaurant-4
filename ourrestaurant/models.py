@@ -6,5 +6,8 @@ class OurRestaurant(models.Model):
     content = models.TextField()
     image = models.ImageField(upload_to="ourrestaurant/")
 
+    def __str__(self):
+        return self.title
+
 #consider whether other models here to fill out restaurant history
 
