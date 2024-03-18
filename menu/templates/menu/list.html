@@ -3,5 +3,8 @@
 {% for meal in menu_list %}
 
 <h2>{{meal.name}}</h2>
+<h3>{{meal.description}}</h3>
+<h3>{{meal.price}}</h3>
+<img src="{{ meal.picture.url }}">
 {% endfor %}
 
