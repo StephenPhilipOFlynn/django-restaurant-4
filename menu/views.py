@@ -7,4 +7,4 @@ from .models import Meal
 def menu_list(request):
     menu_list = Meal.objects.all()
     context = {'menu_list': menu_list}
-    return render(request , 'menu/templates/list.html', context)
+    return render(request, 'menu/list.html', context)
