@@ -10,3 +10,27 @@ body {
     color: #EE4E34;
     /* re-add font here */
 }
+
+/* Menu Section */
+
+.menus {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-section {
+    width: 32%;
+}
+
+.single-menu img {
+        border-radius: 10%;
+        max-width: 160px;
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+.single-menu:hover img {
+        transition: 0.8s;
+        transform: scale(1.2);
+    }

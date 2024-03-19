@@ -4,12 +4,17 @@
 </head>
 <body>
 <h1>Menu</h1>
-
-{% for meal in menu_list %}
-
-<h2>{{meal.name}}</h2>
-<h3>{{meal.description}}</h3>
-<h3>{{meal.price}}</h3>
-<img src="{{ meal.picture.url }}">
-{% endfor %}
+<div class="menus">
+    <div class="menu-section">
+        <h4>Our Menu</h4>
+        {% for meal in menu_list %}
+        <div class="single-menu">
+            <img src="{{ meal.picture.url }}" alt="{{ meal.name}}">
+            <div class="menu-content">
+                <h5>{{ meal.name }}<span> €{{ meal.price }}</span></h5>
+                <p>{{ meal.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </body>
