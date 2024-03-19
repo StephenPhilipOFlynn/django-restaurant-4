@@ -34,3 +34,16 @@ body {
         transition: 0.8s;
         transform: scale(1.2);
     }
+
+
+@media(max-width: 991px) {  
+        .single-menu {
+            flex-direction: column;
+        }
+
+        .single-menu img {
+        max-width: 100px;
+        }
+    }
+
+
