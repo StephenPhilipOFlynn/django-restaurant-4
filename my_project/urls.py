@@ -24,6 +24,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+    path('', include('home.urls')),
     path('restaurant/', include('restaurant.urls')),
     path('menu/', menu_views.menu_list, name='menu'),
     path('gallery/', gallery_views.index, name='gallery'),
