@@ -1,3 +1,6 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap');
+
 /* Theme settings for website */
 
 *{
@@ -10,7 +13,7 @@
 body {
     background-color: #FCEDDA;
     color: #EE4E34;
-    /* re-add font here */
+    font-family: 'Kanit', sans-serif;
 }
 
 /* Menu Section */
