@@ -35,6 +35,20 @@ nav li {
     height: 50px;
 }
 
+nav a {
+    height: 100%;
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    color:#FCEDDA;
+    font-size: 150%;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #EE4E34;
+}
+
 /* Navigation bar logo */
 
 .logo-container {
