@@ -16,6 +16,17 @@ body {
     font-family: 'Kanit', sans-serif;
 }
 
+/* Image Carousel */
+
+.owl-carousel .item {
+    height: 270px;
+}
+
+.owl-carousel .item img {
+    height: 100%;
+    object-fit: cover;
+}
+
 /* Menu Section */
 
 .menus {
@@ -51,20 +62,20 @@ body {
         }
     }
 
-    /* Social Media Links */
+/* Social Media Links */
 
-    .social-networks {
-        text-align: center;
+.social-networks {
+    text-align: center;
     }
 
-    .social-networks > li {
-        display: inline;
+.social-networks > li {
+    display: inline;
     }
 
-    .social-networks i {
-        font-size: 180%;
-        margin: 1%;
-        padding: 5%;
-        color: #EE4E34;
+.social-networks i {
+    font-size: 180%;
+    margin: 1%;
+    padding: 5%;
+    color: #EE4E34;
     }
 
