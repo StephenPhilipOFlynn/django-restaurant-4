@@ -18,3 +18,16 @@ $('.owl-carousel').owlCarousel({
     }
     }
     })
+
+/* Navigation bar functions */
+
+function showSidebar() {
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+    }
+
+function removeSidebar() {
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+    }
+

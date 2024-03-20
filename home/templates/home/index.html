@@ -15,13 +15,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />        
 </head>
 <body>
-    <h1>Leticia's Restaurant</h1>
     <nav>
         <div class="logo-container">
             <img src="media/logo/restaurant_logo.jpeg" alt="Restaurant Logo" id="logo">
         </div>
         <ul class="sidebar">
-            <!-- Add image here-->
+            <li onclick=removeSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             <li><a href="#home">Home</a></li>
             <li><a href="">Our Story</a></li>
             <li><a href="">Menu</a></li>
@@ -33,7 +32,7 @@
             <li class="hideNavbarOnMobile"><a href="">Menu</a></li>
             <li class="hideNavbarOnMobile"><a href="">Reservation</a></li>
             <li class="hideNavbarOnMobile"><a href="">Contact Us</a></li>
-            <!-- add image here-->
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
     </nav>
     <section>
@@ -59,7 +58,6 @@
             </li>
         </ul>
     </section>
-
     <!-- Script tags for Owl Carousel-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
