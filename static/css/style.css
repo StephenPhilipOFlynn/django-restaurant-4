@@ -51,6 +51,20 @@ nav li {
     padding-top: 10px;
 }
 
+/* Responsive Design for Navigation Bar */
+
+@media(max-width: 650px){
+    #logo {
+            margin-left: 40px;
+        }
+    }
+
+@media(max-width: 300px) {
+    #logo {
+            margin-left: 20px;
+        }
+    }
+
 /* Image Carousel */
 
 .owl-carousel .item {
@@ -85,7 +99,6 @@ nav li {
         transition: 0.8s;
         transform: scale(1.2);
     }
-
 
 @media(max-width: 991px) {  
         .single-menu {
