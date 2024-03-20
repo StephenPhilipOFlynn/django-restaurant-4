@@ -48,4 +48,20 @@ body {
         }
     }
 
+    /* Social Media Links */
+
+    .social-networks {
+        text-align: center;
+    }
+
+    .social-networks > li {
+        display: inline;
+    }
+
+    .social-networks i {
+        font-size: 180%;
+        margin: 1%;
+        padding: 5%;
+        color: #EE4E34;
+    }
 
