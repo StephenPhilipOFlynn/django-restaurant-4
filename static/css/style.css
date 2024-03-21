@@ -150,21 +150,27 @@ nav a:hover {
     margin: 50px auto;
 }
 
-.menus {
+.single-menu {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .menu-section {
     width: 100%;
 }
 
+.menu-content {
+    margin: 30px 10px;
+}
+
+.menu-image {
+    justify-content: center;
+    align-items: center;
+}
+
 .single-menu img {
         border-radius: 10%;
         max-width: 400px;
         padding: 5px;
-        margin-right: 10px;
     }
 
 .single-menu:hover img {
@@ -186,7 +192,7 @@ nav a:hover {
     }
 
     .single-menu img {
-    max-width: 100px;
+        max-width: 300px;
     }
 
     .menu-header {
