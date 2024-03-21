@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta name="description" content>
     <meta name="author" content>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-    <!--Google fonts-->
     <title>Leticia's | A Restaurant in Dublin</title>
+    <!--Google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
@@ -16,7 +15,7 @@
 <div>
     <nav>
         <div class="logo-container">
-            <img src="{{ MEDIA_URL }}logo/restaurant_logo.jpeg" alt="Restaurant Logo" id="logo">
+            <img src="media/logo/restaurant_logo.jpeg" alt="Restaurant Logo" id="logo">
         </div>
         <ul class="sidebar">
             <li onclick=removeSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
@@ -47,7 +46,8 @@
             <img src="{{ meal.picture.url }}" alt="{{ meal.name}}">
             </div>
             <div class="menu-content">
-                <h5>{{ meal.name }}<span> €{{ meal.price }}</span></h5>
+                <h3>{{ meal.name }}</h3>
+                <span> €{{ meal.price }}</span>
                 <p>{{ meal.description }}</p>
             </div>
         </div>
