@@ -31,3 +31,8 @@ function removeSidebar() {
     sidebar.style.display = 'none'
     }
 
+/* Scroll to the top of page - menu page */
+
+function scrollToTop() {
+    window.scrollTo(0, 0);
+}

@@ -157,12 +157,12 @@ nav a:hover {
 }
 
 .menu-section {
-    width: 32%;
+    width: 100%;
 }
 
 .single-menu img {
         border-radius: 10%;
-        max-width: 160px;
+        max-width: 400px;
         padding: 5px;
         margin-right: 10px;
     }
@@ -171,7 +171,6 @@ nav a:hover {
         transition: 0.8s;
         transform: scale(1.2);
     }
-
 
 /* Responsive design for Menu on tablet and mobile phone devices */
 
@@ -193,6 +192,25 @@ nav a:hover {
     .menu-header {
         width: 750px;
         }
+}
+
+/* Scroll to the top of the page on Menu */
+
+.scrollUp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 5px 5px;
+    background-color: #296D23;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.scrollUp:hover {
+    background-color: #f7f7f7;
+    color: #296D23;
 }
 
 /* Social Media Links */
