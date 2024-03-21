@@ -33,7 +33,9 @@
     <div class="menu-section">
         {% for meal in menu_list %}
         <div class="single-menu">
+            <div class="menu-image">
             <img src="{{ meal.picture.url }}" alt="{{ meal.name}}">
+            </div>
             <div class="menu-content">
                 <h5>{{ meal.name }}<span> €{{ meal.price }}</span></h5>
                 <p>{{ meal.description }}</p>
