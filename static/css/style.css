@@ -125,9 +125,6 @@ nav a:hover {
     }
     }
 
-
-
-
 @media(max-width: 300px) {
     #logo {
             margin-left: 20px;
@@ -146,6 +143,12 @@ nav a:hover {
 }
 
 /* Menu Section */
+
+.menu-header {
+    text-align: center;
+    width: 1170px;
+    margin: 50px auto;
+}
 
 .menus {
     display: flex;
@@ -169,15 +172,28 @@ nav a:hover {
         transform: scale(1.2);
     }
 
-@media(max-width: 991px) {  
-        .single-menu {
-            flex-direction: column;
-        }
 
-        .single-menu img {
-        max-width: 100px;
-        }
+/* Responsive design for Menu on tablet and mobile phone devices */
+
+@media(max-width: 1200px) {
+    .menu-header {
+    width: 970px;
     }
+}
+
+@media(max-width: 991px) {  
+    .single-menu {
+        flex-direction: column;
+    }
+
+    .single-menu img {
+    max-width: 100px;
+    }
+
+    .menu-header {
+        width: 750px;
+        }
+}
 
 /* Social Media Links */
 
