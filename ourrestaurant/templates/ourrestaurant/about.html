@@ -35,6 +35,16 @@
     </nav>
 </div>
 <div>
+    <div class="founder">
+        {% for entry in about %}
+        <div>
+            <h1>{{ entry.title }}</h1>
+            <img src="{{ entry.image.url }}" alt="Founder Picture">
+            <p>{{ entry.content }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <div>
     <h1>Meet Our Chefs</h1>
     {% for chef in chefs %}
     <div class="chef-content">
