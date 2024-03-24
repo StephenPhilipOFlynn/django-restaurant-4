@@ -20,13 +20,13 @@
         <ul class="sidebar">
             <li onclick=removeSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             <li><a href="/">Home</a></li>
-            <li><a href="">Our Story</a></li>
+            <li><a href="{% url 'ourrestaurant:ourrestaurant_list' %}">Our Story</a></li>
             <li><a href="{% url 'menu' %}">Menu</a></li>
             <li><a href="">Reservation</a></li>
             <li><a href="">Contact Us</a></li>
         </ul>
         <ul>
-            <li class="hideNavbarOnMobile"><a href="">Our Story</a></li>
+            <li class="hideNavbarOnMobile"><a href="{% url 'ourrestaurant:ourrestaurant_list' %}">Our Story</a></li>
             <li class="hideNavbarOnMobile"><a href="{% url 'menu' %}">Menu</a></li>
             <li class="hideNavbarOnMobile"><a href="">Reservation</a></li>
             <li class="hideNavbarOnMobile"><a href="">Contact Us</a></li>
