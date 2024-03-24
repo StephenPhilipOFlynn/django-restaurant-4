@@ -34,6 +34,16 @@
         </ul>
     </nav>
 </div>
+<div>
+    <h1>Meet Our Chefs</h1>
+    {% for chef in chefs %}
+    <div class="chef-content">
+        <h2>{{ chef.name }}</h2>
+        <img src="{{ chef.image.url }}" alt="Image of Chef {{ chef.name }}">
+        <p>{{ chef.bio }}</p>
+    </div>
+    {% endfor %}
+</div>
 <section>
     <ul class="social-networks">
             <li>
