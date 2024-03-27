@@ -173,8 +173,12 @@ nav a:hover {
     align-items: center;
 }
 
-.founder-content {
+.founder-header {
     text-align: center;
+}
+
+.founder-content {
+    text-align: start;
     max-width: 700px;
     margin: 0 auto;
 }
@@ -196,7 +200,7 @@ nav a:hover {
 }
 
 .chef-content {
-    text-align: center;
+    text-align: start;
     max-width: 700px;
     margin: 0 auto;
 }

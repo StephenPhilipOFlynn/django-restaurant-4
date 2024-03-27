@@ -36,8 +36,9 @@
 </div>
 <div class="founder">
     {% for entry in about %}
+    <h1 class="founder-header">Our Story</h1>
         <div class="founder-content">
-            <h1>{{ entry.title }}</h1>
+            <h2>{{ entry.title }}</h2>
             <img src="{{ entry.image.url }}" alt="Founder Picture">
             <p>{{ entry.content }}</p>
         </div>
