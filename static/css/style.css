@@ -143,7 +143,7 @@ nav a:hover {
 }
 
 /* Our Story */
-
+/*
 .founder {
     display: flex;
     justify-content: center;
@@ -154,9 +154,32 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .founder img {
+    border-radius: 10px;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+*/
+
+.founder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.founder-content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.founder-content img {
     border-radius: 10px;
     max-width: 100%;
     margin-top: 20px;
@@ -174,7 +197,7 @@ nav a:hover {
 
 .chef-content {
     text-align: center;
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
