@@ -142,6 +142,48 @@ nav a:hover {
     object-fit: cover;
 }
 
+/* Our Story */
+
+.founder {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.founder > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.founder img {
+    border-radius: 10px;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.chefs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chef-header {
+    text-align: center;
+}
+
+.chef-content {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.chef-content img {
+    border-radius: 10px;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
 /* Menu Section */
 
 .menu-header {
