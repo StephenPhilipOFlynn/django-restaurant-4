@@ -28,6 +28,7 @@ urlpatterns = [
     path('restaurant/', include('restaurant.urls')),
     path('menu/', menu_views.menu_list, name='menu'),
     path('our-restaurant/', include('ourrestaurant.urls', namespace='ourrestaurant')),
+    path('contact-us/', include('contact.urls')),
     path('gallery/', gallery_views.index, name='gallery'),
     path('admin/', admin.site.urls),
     path('login/', auth_views.LoginView.as_view(), name='login'),
