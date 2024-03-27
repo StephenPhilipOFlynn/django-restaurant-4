@@ -204,6 +204,9 @@ nav a:hover {
 .chef-content img {
     border-radius: 10px;
     max-width: 100%;
+    max-height: 334px;
+    width: auto;
+    height: auto;
     margin-top: 20px;
 }
 
