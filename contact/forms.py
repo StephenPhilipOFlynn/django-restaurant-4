@@ -9,7 +9,7 @@ class ContactForm(forms.ModelForm):
             'name': forms.TextInput(attrs={'class':'contact-form-name'}),
             'subject': forms.TextInput(attrs={'class': 'contact-form-subject'}),
             'email': forms.EmailInput(attrs={'class': 'contact-form-email'}),
-            'message': forms.EmailInput(attrs={'class': 'contact-form-message'}),
+            'message': forms.TextInput(attrs={'class': 'contact-form-message'}),
         }
         labels = {
             'name': 'Your Name',
