@@ -35,10 +35,10 @@
     </nav>
 </div>
 <div>
-    <form action="" method="post">
+    <form class="contact-form" action="" method="post">
         {% csrf_token %}
         {{ form }}
-        <button type="submit">Send</button>
+        <button class="contact-form-button" type="submit">Send</button>
     </form>
 </div>
 
