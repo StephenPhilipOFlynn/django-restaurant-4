@@ -195,8 +195,7 @@ nav a:hover {
 
 .menu-header {
     text-align: center;
-    width: 1170px;
-    margin: 50px auto;
+    width: 100%;
 }
 
 .single-menu {
@@ -230,12 +229,6 @@ nav a:hover {
 
 /* Responsive design for Menu on tablet and mobile phone devices */
 
-@media(max-width: 1200px) {
-    .menu-header {
-    width: 970px;
-    }
-}
-
 @media(max-width: 991px) {  
     .single-menu {
         flex-direction: column;
@@ -244,10 +237,6 @@ nav a:hover {
     .single-menu img {
         max-width: 300px;
     }
-
-    .menu-header {
-        width: 750px;
-        }
 }
 
 /* Contact Us page */
