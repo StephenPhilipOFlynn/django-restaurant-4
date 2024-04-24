@@ -142,6 +142,20 @@ nav a:hover {
     object-fit: cover;
 }
 
+/* video on home page */
+
+#video-container {
+    max-width: 800px;
+    }
+
+@media screen and (max-width: 800px) {
+
+#video-container {
+        max-width: 750px;
+        }
+
+    }
+
 /* Our Story */
 
 .founder {
