@@ -3,4 +3,5 @@ from .models import TableReservation
 
 class ReserveForm(forms.ModelForm):
     class Meta:
-        pass
+        model = TableReservation
+        fields = '__all__'

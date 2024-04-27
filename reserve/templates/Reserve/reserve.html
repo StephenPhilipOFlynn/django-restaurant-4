@@ -36,6 +36,13 @@
 </div>
 <br>
 <div>
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Reserve Table</button>
+</form>
+</div>
+<div>
     <section>
         <ul class="social-networks">
             <li>
