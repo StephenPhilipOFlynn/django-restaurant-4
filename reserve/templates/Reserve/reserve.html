@@ -35,10 +35,23 @@
     </nav>
 </div>
 <br>
+<div class="reserve-header">
+    <h1>Reserve a table</h1>
+    <h4>For bookings of more than 8 people, please call our restaurant</h4>
+</div>
 <div>
     <form class="reserve-form" action="" method="post">
         {% csrf_token %}
-        {{ form }}
+        <label>Name:</label>
+        {{ form.name }}
+        <label>Email:</label>
+        {{ form.email }}
+        <label>Special Requests:</label>
+        {{ form.requests }}
+        <label>Number of Guests:</label>
+        {{ form.number_of_guests }}
+        <label>Date and Time:</label>
+        <input type="datetime-local" name="date_and_time" id="" required>
         <button class="reserve-form-button" type="submit">Reserve Table</button>
 </form>
 </div>

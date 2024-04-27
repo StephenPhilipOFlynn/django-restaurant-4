@@ -255,6 +255,12 @@ nav a:hover {
 
 /* Reserve Form page */
 
+.reserve-header {
+    text-align: center;
+    width: 100%;
+}
+
+
 .reserve-form {
         max-width: 600px;
         margin: 50px auto;
@@ -287,6 +293,11 @@ nav a:hover {
 }
 
 /* Contact Us page */
+
+.contact-header {
+    text-align: center;
+    width: 100%;
+}
 
 .contact-form {
     max-width: 600px;
