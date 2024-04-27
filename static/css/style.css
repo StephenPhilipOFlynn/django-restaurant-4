@@ -253,6 +253,32 @@ nav a:hover {
     }
 }
 
+/* Reserve Form page */
+
+.reserve-form {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        color:#f7f7f7;
+        background-color: #EE4E34;
+        border-radius: 4px;
+}
+
+.reserve-form-button {
+    background-color: white;
+    color: #EE4E34;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+}
+
+.reserve-form-button:hover {
+    background-color: #296D23;
+    color: #f7f7f7;
+}
+
 /* Contact Us page */
 
 .contact-form {

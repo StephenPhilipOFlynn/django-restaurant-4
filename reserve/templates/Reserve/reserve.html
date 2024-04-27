@@ -36,10 +36,10 @@
 </div>
 <br>
 <div>
-    <form method="post">
+    <form class="reserve-form" action="" method="post">
         {% csrf_token %}
         {{ form }}
-        <button type="submit">Reserve Table</button>
+        <button class="reserve-form-button" type="submit">Reserve Table</button>
 </form>
 </div>
 <div>
