@@ -22,13 +22,13 @@
             <li><a href="/">Home</a></li>
             <li><a href="{% url 'ourrestaurant:ourrestaurant_list' %}">Our Story</a></li>
             <li><a href="{% url 'menu' %}">Menu</a></li>
-            <li><a href="">Reservation</a></li>
+            <li><a href="{% url 'reserve:book_table' %}">Reservation</a></li>
             <li><a href="{% url 'contact:contact_us' %}">Contact Us</a></li>
         </ul>
         <ul>
             <li class="hideNavbarOnMobile"><a href="{% url 'ourrestaurant:ourrestaurant_list' %}">Our Story</a></li>
             <li class="hideNavbarOnMobile"><a href="{% url 'menu' %}">Menu</a></li>
-            <li class="hideNavbarOnMobile"><a href="">Reservation</a></li>
+            <li class="hideNavbarOnMobile"><a href="{% url 'reserve:book_table' %}">Reservation</a></li>
             <li class="hideNavbarOnMobile"><a href="{% url 'contact:contact_us' %}">Contact Us</a></li>
             <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
