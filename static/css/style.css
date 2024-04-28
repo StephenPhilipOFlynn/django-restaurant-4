@@ -395,32 +395,21 @@ nav a:hover {
     color: #e60026;
     }
 
-/* Home page - header and why visit us section */
+/* Home page - restaurant ethos home page */
 
-#hero-outer {
-    height: 500px;
-    width: 100%;
-    overflow: hidden;
-}
-
-#hero-image {
-    height: 500px;
-    width: 100%;
-    background: url('/workspace/django-restaurant-4/media/ourrestaurant/shutterstock_1364480012_head_chef.jpg') no-repeat center center;
-    animation-name: hero-zoom;
-    animation-duration: 7s;
-    animation-fill-mode: forwards;
-}
-
-/* restaurant ethos home page */
+#center-cover-bg {
+    max-width: 100%;
+    height: 400px;
+    }
 
 #tagline {
     clear: both;
-    margin-left: 30px;
+    text-align: center;
+    font-size: 180%;
 }
 
 #restaurant-ethos {
-    height: 600px;
+    height: 400px;
 }
 
 #left-about {
@@ -438,7 +427,7 @@ nav a:hover {
 #center-about {
     width: 33%;
     margin: 0 auto;
-    background-color: white;
+    background-color: #FCEDDA;
 }
 
 hr {
@@ -466,7 +455,7 @@ hr {
 #welcome {
     text-align: center;
     margin: 20px 0;
-    font-size: 280%;
+    font-size: 180%;
 }
 
 .right-about-heading h2 {
@@ -480,7 +469,7 @@ hr {
 @media screen and (max-width: 1200px) {
     #restaurant-ethos {
         width: 65%;
-        height: 1200px;
+        height: 900px;
         margin: 0 auto;
     }
 
@@ -505,9 +494,9 @@ hr {
 
 @media screen and (max-width: 950px) {
 
-    #club-ethos {
+    #restaurant-ethos {
             width: 90%;
-            height: 1200px;
+            height: 800px;
             margin: 0 auto;
         }
         
