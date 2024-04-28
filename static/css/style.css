@@ -397,10 +397,6 @@ nav a:hover {
 
 /* Home page - header and why visit us section */
 
-
-
-
-
 #hero-outer {
     height: 500px;
     width: 100%;
@@ -467,6 +463,12 @@ hr {
     margin-bottom: 50px;
 }
 
+#welcome {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 280%;
+}
+
 .right-about-heading h2 {
     text-align: right;
 }
@@ -522,4 +524,19 @@ hr {
             text-align: center;
             padding: 0 20px;
         }
+}
+
+/* Find Us (Contact Details section)
+
+/*contact details*/
+
+#find-us
+{
+    font-size: 280%;
+    text-align: center;
+    margin: 20px 0;
+ }
+
+.contact-details {
+    margin-left: 30px;
 }
