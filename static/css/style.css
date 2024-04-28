@@ -392,3 +392,21 @@ nav a:hover {
     color: #EE4E34;
     }
 
+/* Social Media reserve page */
+
+.reserve-socials {
+    text-align: center;
+    }
+
+.reserve-socials > li {
+    display: inline;
+    }
+
+.reserve-socials i {
+    font-size: 180%;
+    margin: 1%;
+    padding: 5%;
+    color: #e60026;
+    }
+
+
