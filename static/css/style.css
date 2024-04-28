@@ -258,6 +258,7 @@ nav a:hover {
 .reserve-header {
     text-align: center;
     width: 100%;
+    color: #e60026
 }
 
 .reserve-form {
@@ -265,13 +266,26 @@ nav a:hover {
         margin: 50px auto;
         padding: 20px;
         color:#f7f7f7;
-        background-color: #EE4E34;
+        background-color: #e60026;
         border-radius: 4px;
+}
+
+.reserve-form-name,
+.reserve-form-email,
+.reserve-form-requests,
+.reserve-form-guests,
+.reserve-form-date-and-time {
+    width: 100%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #0000;
+    border-radius: 4px;
 }
 
 .reserve-form-button {
     background-color: white;
-    color: #EE4E34;
+    color: #e60026;
     padding: 14px 20px;
     border: none;
     border-radius: 4px;

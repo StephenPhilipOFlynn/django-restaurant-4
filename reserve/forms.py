@@ -11,7 +11,7 @@ class ReserveForm(forms.ModelForm):
             'email': forms.EmailInput(attrs={'class': 'reserve-form-email'}),
             'phone': forms.TextInput(attrs={'class': 'reserve-form-phone'}),
             'requests': forms.Textarea(attrs={'class': 'reserve-form-requests'}),
-            'number_of_guests': forms.NumberInput(attrs={'class': 'reserve-form-email'}),
+            'number_of_guests': forms.NumberInput(attrs={'class': 'reserve-form-guests'}),
             'date_and_time': forms.DateTimeInput(attrs={'class': 'reserve-form-date-and-time', 'type': 'datetime-local', 'step': '1800'}),
         }
         labels = {
