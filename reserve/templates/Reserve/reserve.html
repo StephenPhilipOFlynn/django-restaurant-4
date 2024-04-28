@@ -37,21 +37,21 @@
 <br>
 <div class="reserve-header">
     <h1>Reserve a table</h1>
-    <h4>For bookings of more than 8 people, please call our restaurant</h4>
+    <h4>For bookings of more than 8 people, please call our restaurant!</h4>
 </div>
 <div>
-    <form class="reserve-form" action="" method="post">
+<form class="reserve-form" action="" method="post">
         {% csrf_token %}
-        <label>Name:</label>
+        <label for="reserve_name">Name:</label>
         {{ form.name }}
-        <label>Email:</label>
+        <label for="reserve-email">Email:</label>
         {{ form.email }}
-        <label>Special Requests:</label>
+        <label for="reserve-message">Special Requests:</label>
         {{ form.requests }}
-        <label>Number of Guests:</label>
+        <label for="reserve-guests">Number of Guests:</label>
         {{ form.number_of_guests }}
-        <label>Date and Time:</label>
-        <input type="datetime-local" name="date_and_time" id="" required>
+        <label for="reserve_date_and_time">Date and Time:</label>
+        <input type="datetime-local" name="date_and_time" id="reserve_date_and_time" required min="{{ min_datetime_iso }}" step="1800">
         <button class="reserve-form-button" type="submit">Reserve Table</button>
 </form>
 </div>
