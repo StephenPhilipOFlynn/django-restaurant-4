@@ -51,7 +51,7 @@
         <label for="reserve-guests">Number of Guests:</label>
         {{ form.number_of_guests }}
         <label for="reserve_date_and_time">Date and Time:</label>
-        <input type="datetime-local" name="date_and_time" id="reserve_date_and_time" required min="{{ min_datetime_iso }}" step="1800">
+        {{ form.date_and_time }}
         <button class="reserve-form-button" type="submit">Reserve Table</button>
 </form>
 </div>
