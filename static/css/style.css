@@ -142,7 +142,7 @@ nav a:hover {
     object-fit: cover;
 }
 
-/* video on home page */
+/* video on home page
 
 #video-container {
     max-width: 800px;
@@ -155,6 +155,127 @@ nav a:hover {
         }
 
     }
+*/
+
+/* Index Page Content */
+
+#hero-outer {
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#hero-image {
+    height: 500px;
+    width: 100%;
+    background: url('/workspace/django-restaurant-4/media/ourrestaurant/shutterstock_1364480012_head_chef.jpg') no-repeat center center;
+    animation-name: hero-zoom;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+}
+
+/* restaurant ethos home page */
+
+#restaurant-ethos {
+    height: 600px;
+}
+
+#left-about {
+    padding-top: 30px;
+    width: 33%;
+    float: left;
+}
+
+#right-about {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+}
+
+#center-about {
+    width: 33%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.left-about-heading {
+    width: 60%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-about-heading {
+    width: 60%;
+    float: left;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-about-heading h2 {
+    text-align: right;
+}
+
+.right-about-heading p {
+    text-align: right;
+}
+
+@media screen and (max-width: 1200px) {
+    #restaurant-ethos {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    #welcome {
+        font-size: 200%;
+        text-align: center;
+    }
+
+    #left-about, #right-about {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+@media screen and (max-width: 950px) {
+
+    #club-ethos {
+            width: 90%;
+            height: 1200px;
+            margin: 0 auto;
+        }
+        
+    .left-about-heading, .right-about-heading {
+            width: inherit;
+        }
+        
+    .left-about-heading h2, .right-about-heading h2 {
+            width: 100%;
+            text-align: center;
+        }
+        
+    .left-about-heading p, .right-about-heading p {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+
 
 /* Our Story */
 
