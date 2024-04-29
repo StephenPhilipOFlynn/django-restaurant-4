@@ -41,10 +41,11 @@
     <h4>Hosting a party? Have a question about the menu? Want to join our team? Get in touch!</h4>
 </div>
 <div>
-    <form class="contact-form" action="" method="post">
+    <form class="contact-form" id="form" action="" method="post">
         {% csrf_token %}
         {{ form }}
         <button class="contact-form-button" type="submit">Send</button>
+        <input id="button-two" type="reset" value="Reset Form">
     </form>
 </div>
 <br>

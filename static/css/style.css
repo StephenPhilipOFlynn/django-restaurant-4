@@ -335,6 +335,18 @@ nav a:hover {
     color: #f7f7f7;
 }
 
+#button-two {
+    background-color: #3a3a3a;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 12px 28px;
+    text-align: center;
+    display: block;
+    border-radius: 4px;
+    margin: 8px 0;
+}
+
 @media(max-width: 600px) {
     .contact-form {
         width: 100%;
