@@ -402,6 +402,18 @@ nav a:hover {
     height: 400px;
     }
 
+#center-about {
+        width: 33%;
+        margin: 0 auto;
+        background-color: #FCEDDA;
+    }
+    
+#center-about img {
+        max-width: 400px;
+        height: auto;
+        border-radius: 50px;
+    }
+
 #tagline {
     clear: both;
     text-align: center;
@@ -423,17 +435,6 @@ nav a:hover {
     padding-top: 30px;
     width: 33%;
     float: right;
-}
-
-#center-about {
-    width: 33%;
-    margin: 0 auto;
-    background-color: #FCEDDA;
-}
-
-#center-about img {
-    max-width: 400px;
-    height: auto;
 }
 
 hr {
