@@ -339,13 +339,26 @@ nav a:hover {
     background-color: #3a3a3a;
     color: white;
     border: none;
-    font-size: 20px;
-    padding: 12px 28px;
+    font-size: 14px;
+    padding: 14px 20px;
     text-align: center;
     display: block;
     border-radius: 4px;
     margin: 8px 0;
 }
+
+#button-two:hover {
+    background-color: #d11818;
+    color: white;
+  }
+
+#button-two:active {
+    background-color: #d11818;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
 
 @media(max-width: 600px) {
     .contact-form {
