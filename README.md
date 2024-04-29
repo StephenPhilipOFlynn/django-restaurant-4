@@ -1,9 +1,14 @@
 Leticia's Restaurant
 
-This website is designed to be a fictional restaurant in Dublin city. 
+This website is designed to be a fictional restaurant in Dublin city, specialising in Brazilian and Spanish food. 
 
 Unresolved bugs
 
+- Receive form on database backend for reservation.
+- Form validation reservation section.
+- Further form validation on contact section.
+- Correct menu database so menu items appear in starters first, then main courses, then desserts.
+- HTML, CSS, Javascript, Python syntax checkers.
 
 Credits
 Why Visit Us Image - Fabio Alves - Unsplash

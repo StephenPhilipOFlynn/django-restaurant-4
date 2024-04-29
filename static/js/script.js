@@ -37,9 +37,3 @@ function scrollToTop() {
     window.scrollTo(0, 0);
 }
 
-/* Contact Form submitted */
-
-document.getElementById("form").addEventListener("submit", function(event) {
-    event.preventDefault();
-    document.getElementById("submit-message").textContent = "Email submitted! Please refresh this page if you wish to resubmit a different email.";
-});
