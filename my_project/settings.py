@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-
+SECRET_KEY = 'django-insecure-iuo_74_b%l6-_f!01@ky$qrwfd4-p#wgv@r8kh@yc!883u^4%_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -98,7 +98,7 @@ DATABASES = {
 }
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://8000-stephenphil-djangoresta-4m5hepdo2ap.ws.codeinstitute-ide.net/",
+    "https://8000-stephenphil-djangoresta-4m5hepdo2ap.ws.codeinstitute-ide.net",
     "https://*.herokuapp.com"
 ]
 
