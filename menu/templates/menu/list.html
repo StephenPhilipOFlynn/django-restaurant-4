@@ -42,19 +42,67 @@
 </div>
 <div class="menus">
     <div class="menu-section">
-        {% for meal in menu_list %}
+        <h2>Starters</h2>
+        {% for meal in starters %}
         <div class="single-menu">
             <div class="menu-image">
-            <img src="{{ meal.picture.url }}" alt="{{ meal.name}}">
+                <img src="{{ meal.picture.url }}" alt="{{ meal.name }}">
             </div>
             <div class="menu-content">
                 <h3>{{ meal.name }}</h3>
-                <span> €{{ meal.price }}</span>
+                <span>€{{ meal.price }}</span>
                 <p>{{ meal.description }}</p>
             </div>
         </div>
         {% endfor %}
     </div>
+    <br>
+    <div class="menu-section">
+        <h2>Main Courses</h2>
+        {% for meal in main_courses %}
+        <div class="single-menu">
+            <div class="menu-image">
+                <img src="{{ meal.picture.url }}" alt="{{ meal.name }}">
+            </div>
+            <div class="menu-content">
+                <h3>{{ meal.name }}</h3>
+                <span>€{{ meal.price }}</span>
+                <p>{{ meal.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <br>
+    <div class="menu-section">
+        <h2>Desserts</h2>
+        {% for meal in desserts %}
+        <div class="single-menu">
+            <div class="menu-image">
+                <img src="{{ meal.picture.url }}" alt="{{ meal.name }}">
+            </div>
+            <div class="menu-content">
+                <h3>{{ meal.name }}</h3>
+                <span>€{{ meal.price }}</span>
+                <p>{{ meal.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <br>
+    <div class="menu-section">
+        <h2>Drinks</h2>
+        {% for meal in drinks %}
+        <div class="single-menu">
+            <div class="menu-image">
+                <img src="{{ meal.picture.url }}" alt="{{ meal.name }}">
+            </div>
+            <div class="menu-content">
+                <h3>{{ meal.name }}</h3>
+                <span>€{{ meal.price }}</span>
+                <p>{{ meal.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
     <br>
     <div>
     <section>
