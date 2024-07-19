@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from restaurant import views as index_views
-from menu import views as menu_views
+from menu.views import menu_view
 from gallery import views as gallery_views
 from django.contrib.auth import views as auth_views
 from django.conf import settings
@@ -26,7 +26,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('', include('home.urls')),
     path('restaurant/', include('restaurant.urls')),
-    path('menu/', menu_views.menu_list, name='menu'),
+    path('menu/', menu_view, name='menu'),
     path('our-restaurant/', include('ourrestaurant.urls', namespace='ourrestaurant')),
     path('contact-us/', include('contact.urls')),
     path('book-table/', include('reserve.urls')),

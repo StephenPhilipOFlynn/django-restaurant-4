@@ -16,4 +16,4 @@ def menu_view(request):
         'desserts': desserts,
         'drinks': drinks,
     }
-    return render(request, 'menu.html', context)
+    return render(request, 'menu/list.html', context)
