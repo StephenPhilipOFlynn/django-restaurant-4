@@ -4,7 +4,7 @@ from django.core.exceptions import ValidationError
 from django.utils import timezone
 import datetime
 
-# Create your models here.abs
+# Create your models here
 
 class TableReservation(models.Model):
     name = models.CharField(max_length=50)
@@ -16,10 +16,3 @@ class TableReservation(models.Model):
 
     def __str__(self):
         return self.name
-
-
-
-
-
-
-
