@@ -14,5 +14,20 @@ class TableReservation(models.Model):
     number_of_guests = models.IntegerField(validators=[MaxValueValidator(8)])
     date_and_time = models.DateTimeField()
 
+    def clean(self):
+        # no bookings in the past
+        if self.date_and_time < timezone.now():
+            raise ValidationError('The booking must be in the future')
+        
+        # no bookings more than two months from now
+        two_months_later = timezone.now() + datetime.timedelta(days=60)
+        if self.date_and_time > two_months_later:
+            raise ValidationError('Bookings cannot be made more than two months ahead')
+        
+        #booking between 12 noon and 10pm
+        booking_time = self.date_and_time.time()
+        if not (booking_time >= datetime.time(12, 0) and booking_time <= datetime.time(22, 0)):
+            raise ValidationError('Bookings must be between 12noon and 10pm')
+
     def __str__(self):
         return self.name

@@ -1,5 +1,7 @@
 from django import forms
 from django.core.validators import MinValueValidator, MaxValueValidator
+from django.utils import timezone
+import datetime
 from .models import TableReservation
 
 class ReserveForm(forms.ModelForm):
@@ -27,3 +29,22 @@ class ReserveForm(forms.ModelForm):
             'number_of_guests': 'Number of Guests',
             'date_and_time': 'Date and Time',
         }
+
+    def clean(self):
+        cleaned_data = super().clean()
+        date_and_time = cleaned_data.get('date_and_time')
+
+        if date_and_time:
+            #avoid past bookings
+            if date_and_time < timezone.now():
+                self.add_error('date_and_time', 'Booking cannot be for past dates')
+                
+            #two months max ahead for booking.
+            two_months_later = timezone.now() + datetime.timedelta(days=60)
+            if date_and_time > two_months_later:
+                self.add_error('date_and_time', 'Booking cannot be more than 2 months in advance')
+                
+            #ensure booking between 12 noon and 10pm
+            booking_time = date_and_time.time()
+            if not (datetime.time(12, 0)) <= booking_time <= (datetime.time(22, 0)):
+                self.add_error('date_and_time', 'Booking time must be between 12 noon and 10pm.')
