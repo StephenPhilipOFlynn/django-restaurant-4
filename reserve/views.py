@@ -16,7 +16,7 @@ def book_table(request):
 
         if reserve_form.is_valid():
             reserve_form.save()
-            return redirect('reservation_success')
+            return redirect('reserve:reservation_success')
             
     context = {'form': reserve_form}
     
