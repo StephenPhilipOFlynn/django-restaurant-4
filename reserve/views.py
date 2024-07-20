@@ -13,6 +13,9 @@ def book_table(request):
 
         if reserve_form.is_valid():
             reserve_form.save()
+        else:
+            print(reserve_form.errors)  # Print the form errors
+
     
     context = {'form': reserve_form}
     
