@@ -13,7 +13,11 @@ def book_table(request):
 
         if reserve_form.is_valid():
             reserve_form.save()
+            return redirect('reservation_success')
             
     context = {'form': reserve_form}
     
     return render(request, 'Reserve/reserve.html' , context)
+
+def reservation_success(request):
+    return render(request, 'Reserve/success.html')
