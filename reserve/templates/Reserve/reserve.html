@@ -40,6 +40,8 @@
 <div class="reserve-header">
     <h1>Reserve a table</h1>
     <h4>For bookings of more than 8 people, please call our restaurant!</h4>
+    <p>Please book no more than two months in advance of today's date.</p>
+    <p>Bookings should be between 12noon and 10pm (22:00)</p>
 </div>
 <div>
 <form class="reserve-form" action="" method="post">
@@ -55,6 +57,7 @@
         <label for="reserve-guests">Number of Guests:</label>
         {{ form.number_of_guests }}
         <label for="reserve_date_and_time">Date and Time:</label>
+        {{ form.date_and_time.errors }}
         {{ form.date_and_time }}
         <button class="reserve-form-button" type="submit">Reserve Table</button>
 </form>
