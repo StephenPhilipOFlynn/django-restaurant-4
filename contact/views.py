@@ -4,6 +4,9 @@ from .forms import ContactForm
 # Create your views here.
 from .models import Contact
 
+def reservation_success(request):
+    return render(request, 'Contact/contact-success.html')
+
 def contact_us(request):
     contact_form = ContactForm()
 
