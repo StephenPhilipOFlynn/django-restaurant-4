@@ -276,6 +276,11 @@ nav a:hover {
     border-radius: 4px;
 }
 
+.reserve-form-requests {
+    height: 90px;
+    resize: vertical;
+}
+
 .reserve-form-button {
     background-color: white;
     color: #e60026;
