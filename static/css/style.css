@@ -601,6 +601,7 @@ hr {
     max-width: 500px;
     height: auto;
     border-radius: 20px;
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 950px) {
