@@ -8,9 +8,9 @@ import datetime
 
 class TableReservation(models.Model):
     name = models.CharField(max_length=50)
-    email = models.EmailField()
+    email = models.EmailField(max_length=50)
     phone = models.CharField(max_length=15)
-    requests = models.TextField(blank=True, null=True)
+    requests = models.TextField(blank=True, null=True, max_length=200)
     number_of_guests = models.IntegerField(validators=[MaxValueValidator(8)])
     date_and_time = models.DateTimeField()
 
