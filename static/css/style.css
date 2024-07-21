@@ -596,3 +596,9 @@ hr {
 .success-message {
     text-align: center;
 }
+
+#success-picture {
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+}
