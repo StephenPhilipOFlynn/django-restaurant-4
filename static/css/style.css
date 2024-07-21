@@ -602,3 +602,11 @@ hr {
     height: auto;
     border-radius: 20px;
 }
+
+@media screen and (max-width: 950px) {
+
+    #success-picture {
+            max-width: 400px;
+            height: auto;
+        }
+    }
