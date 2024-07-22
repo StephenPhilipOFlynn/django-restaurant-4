@@ -37,6 +37,15 @@
     </nav>
 </div>
 <div>
+    <h2>Are you sure you want to delete this booking?</h2>
+    <p>{{ booking.date_and_time }} - {{ booking.number_of_guests }} guests</p>
+    <form method="post">
+    {% csrf_token %}
+    <button type="submit">Yes, delete</button>
+    <a href="{% url 'accounts:profile' %}">Cancel</a>
+    </form>
+</div>
+<div>
     <section>
         <ul class="social-networks">
             <li>

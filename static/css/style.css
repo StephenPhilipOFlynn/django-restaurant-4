@@ -640,3 +640,37 @@ hr {
     background-color: #d11818;
     color: white;
   }
+
+/* Signup */
+
+.signup-header {
+    text-align: center;
+    width: 100%;
+}
+
+.signup-button {
+    background-color: #3a3a3a;
+    color: white;
+    border: none;
+    font-size: 14px;
+    padding: 14px 20px;
+    text-align: center;
+    display: block;
+    border-radius: 4px;
+    margin: 8px 0;
+}
+
+.signup-button:hover {
+    background-color: #d11818;
+    color: white;
+  }
+
+.signup-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    color:#f7f7f7;
+    background-color: #EE4E34;
+    border-radius: 4px;
+}
+

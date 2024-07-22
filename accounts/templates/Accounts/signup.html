@@ -36,6 +36,16 @@
         </ul>
     </nav>
 </div>
+<div class="signup-header">
+    <h2>Sign Up</h2>
+</div>
+<div>
+    <form class="signup-form" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="signup-button">Sign Up</button>
+    </form>
+</div>
 <div>
     <section>
         <ul class="social-networks">
