@@ -37,6 +37,18 @@
     </nav>
 </div>
 <div>
+<ul>
+    {% for booking in bookings %}
+        <li>{{ booking.date_and_time }} - {{ booking.number_of_guests }} guests
+            <form action="{% url 'accounts:delete_booking' booking.id %}" method="post" style="display:inline;">
+                {% csrf_token %}
+                <button type="submit">Delete</button>
+            </form>
+        </li>
+    {% endfor %}
+</ul>
+</div>
+<div>
     <section>
         <ul class="social-networks">
             <li>
