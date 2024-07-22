@@ -674,3 +674,17 @@ hr {
     border-radius: 4px;
 }
 
+/* Profile page with delete option */
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    text-align: center;
+}
+    
+.profile {
+    padding: 20px;
+    border-radius: 8px;
+}

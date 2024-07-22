@@ -36,17 +36,22 @@
         </ul>
     </nav>
 </div>
-<div>
-<ul>
-    {% for booking in bookings %}
+<div class="profile-container">
+    <div class="profile">
+        <h1>Current Reservations</h1>
+        <p>Please see any existing reservations linked to your email address below.</p>
+        <p>To make a new reservation, return to the reservation page.</p>
+        <ul>
+        {% for booking in bookings %}
         <li>{{ booking.date_and_time }} - {{ booking.number_of_guests }} guests
-            <form action="{% url 'accounts:delete_booking' booking.id %}" method="post" style="display:inline;">
+            <form action="{% url 'accounts:delete_booking' booking.id %}" method="post">
                 {% csrf_token %}
                 <button type="submit">Delete</button>
             </form>
         </li>
-    {% endfor %}
-</ul>
+        {% endfor %}
+        </ul>
+    </div>
 </div>
 <div>
     <section>
