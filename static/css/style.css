@@ -611,3 +611,32 @@ hr {
             height: auto;
         }
     }
+
+/* Login Page */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login {
+    text-align: center;
+}
+
+.login-button {
+    background-color: #3a3a3a;
+    color: white;
+    border: none;
+    font-size: 14px;
+    padding: 14px 20px;
+    text-align: center;
+    display: block;
+    border-radius: 4px;
+    margin: 8px 0;
+}
+
+.login-button:hover {
+    background-color: #d11818;
+    color: white;
+  }
