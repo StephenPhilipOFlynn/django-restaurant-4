@@ -46,7 +46,7 @@
         <li>{{ booking.date_and_time }} - {{ booking.number_of_guests }} guests
             <form action="{% url 'accounts:delete_booking' booking.id %}" method="post">
                 {% csrf_token %}
-                <button type="submit">Delete</button>
+                <button class="delete-button" type="submit">Delete</button>
             </form>
         </li>
         {% endfor %}

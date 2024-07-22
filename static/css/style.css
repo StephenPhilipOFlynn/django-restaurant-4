@@ -688,3 +688,20 @@ hr {
     padding: 20px;
     border-radius: 8px;
 }
+
+.delete-button {
+    background-color: #3a3a3a;
+    color: white;
+    border: none;
+    font-size: 14px;
+    padding: 14px 20px;
+    text-align: center;
+    display: block;
+    border-radius: 4px;
+    margin: 8px 0;
+}
+
+.delete-button:hover {
+    background-color: #d11818;
+    color: white;
+  }
