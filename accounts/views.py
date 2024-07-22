@@ -37,5 +37,13 @@ def logout_view(request):
         logout(request)
         return redirect('accounts:login')
 
-# add login for profile view request
-# add login for delete booking request
+def profile_view(request):
+    bookings = TableReservation.objects.filter(email=request.user.email)
+    return render(request, 'Accounts/profile.html', {'bookings': bookings})
+
+def delete_booking(request, booking_id):
+    booking = get_object_or_404(TableReservation, id=booking_id, email=request.user.email)
+    if request.method == 'POST':
+        booking.delete()
+        return redirect('accounts:profile')
+    return render(request, 'accounts/confirm_delete.html', {'booking': booking})
