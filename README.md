@@ -7,6 +7,8 @@ Features
 - Admins can upload, update, and delete starters, main courses, desserts, and drinks.
 - About Us Page: Admins can add, update, or remove information about the restaurant and its chefs.
 - Reservation Management: Users can make, view, and delete reservations.
+
+![example_reservations](https://github.com/user-attachments/assets/6dcf03df-8aec-4aa0-8ed0-d7500d917369)
 - Email Linkage: Reservations are linked to user accounts via email.
 - Admin Interface: Admins can manage reservations through the Django admin panel.
 - Contact Form: Users can send messages to the restaurant.
