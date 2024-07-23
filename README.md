@@ -22,6 +22,21 @@ Technologies Used
 - Heroku: Deployment platform
 - Gunicorn: WSGI HTTP server for deployment
 
+Prerequisites
+
+- python 3.9.18
+- asgiref 3.7.2
+- cloudinary 1.36.0
+- dj-database-url 0.5.0
+- dj3-cloudinary-storage 0.0.6
+- Django 4.2.11
+- gunicorn 20.1.0
+- pillow 10.2.0
+- psycopg2 2.9.9
+- sqlparse 0.4.4
+- urllib3 1.26.18
+- whitenoise 6.5.0
+
 Usage
 - Home Page: Navigate to the home page to see general information.
 - Reservations: Sign up or log in to book a table. View and delete your reservations on the profile page.
@@ -35,9 +50,10 @@ The revised version of the project was deployed on Heroku on the 22 July 2024.
 
 Testing 
 
-The website has been manually tested on mobile phones, ipad size devices, a laptop and monitors to ensure that it is functional for a user on all device sizes.
+The website has been manually tested on mobile phones, ipad size devices, a laptop and monitors to ensure that it is responsively functional for a user on all device sizes.
 
 Contact Information
+
 If you have any questions, feel free to reach out:
 
 Name: Stephen O'Flynn
