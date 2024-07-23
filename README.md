@@ -1,22 +1,55 @@
-Leticia's Restaurant
+Leticia's Restaurant is a website with the django framework. The website is designed as a fictional restaurant in Dublin city.
+This project is a Django-based web application that allows users to book tables at a restaurant. Users can sign up, log in, view their current reservations, and delete bookings. The project also includes a separate contact form for users to send messages to the restaurant, and an admin interface for managing reservations.
 
-This website is designed to be a fictional restaurant in Dublin city, specialising in Brazilian and Spanish food. 
+Features
 
-Unresolved bugs
+- User Authentication: Users can sign up, log in, and log out.
+- Admins can upload, update, and delete starters, main courses, desserts, and drinks.
+- About Us Page: Admins can add, update, or remove information about the restaurant and its chefs.
+- Reservation Management: Users can make, view, and delete reservations.
+- Email Linkage: Reservations are linked to user accounts via email.
+- Admin Interface: Admins can manage reservations through the Django admin panel.
+- Contact Form: Users can send messages to the restaurant.
+- Responsive Design: The website is responsive and works on various device sizes.
 
-- Add Cloudinary file storage for admin users to be able to add further images to applications.
-- Receipt of the form on the database backend for reservation section.
-- Form validation reservation section.
-- Further form validation on contact section.
-- Correct menu database so menu items appear in starters first, then main courses, then desserts.
-- HTML, CSS, Javascript, Python syntax checkers.
+Technologies Used
+
+- Django: Web framework
+- CodeInstitute PostgreSQL: Database
+- HTML/CSS: Frontend design
+- Bootstrap: CSS framework for responsiveness
+- JavaScript: Interactive elements
+- Heroku: Deployment platform
+- Gunicorn: WSGI HTTP server for deployment
+
+Usage
+- Home Page: Navigate to the home page to see general information.
+- Reservations: Sign up or log in to book a table. View and delete your reservations on the profile page.
+- Admin: Access the admin panel at '/admin' to manage reservations (admin credentials required), to add or delete menu items, and to add or delete or chefs, or the about us section.
+- Contact: Use the contact form to send messages to the restaurant.
+
+Deployment
+
+An initial version of the project was deployed on Heroku on the 3 May 2024.
+The revised version of the project was deployed on Heroku on the 22 July 2024. 
+
+Testing 
+
+The website has been manually tested on mobile phones, ipad size devices, a laptop and monitors to ensure that it is functional for a user on all device sizes.
+
+Contact Information
+If you have any questions, feel free to reach out:
+
+Name: Stephen O'Flynn
+Email: soflynn@tcd.ie
+GitHub: https://github.com/StephenPhilipOFlynn/
 
 Credits
-Why Visit Us Image - Fabio Alves - Unsplash
+
 Other food and restaurant images - Free trials - AdobeStock, Shuttershock, Pixabay
 Home page layout - Code Institute - Love Running CodeInstitute walkthrough Project
 
-- Setting up SQL database and deploying to Heroku
+- Setting up PostgresSQL database and deploying to Heroku
 CodeInstitue walkthrough project
 
 Setting up Django file structures - urls, views, static
@@ -24,7 +57,7 @@ CodeInstitute walkthrough Django Blog project
 - Creating Our Meals App | Build A Restaurant Site With Python and Django from @technologyit5133
 https://youtu.be/EI02wQ51GjA?si=Y8yoSTDSaneHynsq
 
-- Logo design
+- Logo design / Chef working in kitchen image (success/ contact received image)
 Dall.E
 
 -	Create Amazing Responsive Carousels Using Few lines of CSS 
