@@ -15,6 +15,7 @@ Features
 - Admin Interface: Admins can manage reservations through the Django admin panel.
 - Contact Form: Users can send messages to the restaurant.
 - Responsive Design: The website is responsive and works on various device sizes.
+- A responsive navigation bar present on all site pages allows users to navigate to various sections of the website easily.
 
 Technologies Used
 
