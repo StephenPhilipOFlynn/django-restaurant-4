@@ -5,6 +5,8 @@ Features
 
 - User Authentication: Users can sign up, log in, and log out.
 - Admins can upload, update, and delete starters, main courses, desserts, and drinks.
+![menu_page_example](https://github.com/user-attachments/assets/911fe6d5-ba37-4acd-9c5a-e5a39ea244ef)
+  
 - About Us Page: Admins can add, update, or remove information about the restaurant and its chefs.
 - Reservation Management: Users can make, view, and delete reservations.
 
